@@ -1,0 +1,1 @@
+insert into administrativo values('741','6','A741','Edgard','Vivar','av 5#35-28','ai@unal.edu.co','Tesorería','369');
