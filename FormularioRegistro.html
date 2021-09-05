@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tu Salud: Universidad Autónoma de Bucaramanga</title>
+    </head>
+    <body>
+        <h1 style="color: blue;">Formulario de datos</h1>
+
+        <form action="FormularioRegistro.html" method="POST">
+        <p>
+            <label for="nombre"> Nombre:</label>
+            <input type="text" name="nombre" placeholder="Nombre"/>
+        </p>
+
+        <p>
+            <label for="tipo_doc">Tipo de documento:</label>
+            <select name="tipo_doc">
+                <option>Seleccione tipo de documento</option>
+                <option value="cedula">Cédula de ciudadania</option>
+                <option value="tj_ide">Tarjeta de identidad</option>
+                <option value="c_extranjera">Cédula extranjera</option>
+                <option value="nuip">NUIP</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="documento"> N° Documento:</label>
+            <input type="text" name="documento" placeholder="N° de identificación"/>
+        </p>
+
+        <p>
+            <label for="email"> Email:</label>
+            <input type="text" name="email" placeholder="Email"/>
+        </p>
+        
+        <p>
+            <label for="celular"> Celular:</label>
+            <input type="text" name="celular" placeholder="N° Celular"/>
+        </p>
+
+        <p>
+            <label for="peso"> Peso (kg):</label>
+            <input type="text" name="peso" placeholder="Peso"/>
+        </p>
+
+        <p>
+            <label for="talla"> Talla (cm):</label>
+            <input type="text" name="talla" placeholder="Talla"/>
+        </p>
+
+        <p>
+            <button type="submit">Guardar datos personales</button>
+        </p>
+        
+    </form> 
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tu Salud: Universidad Autónoma de Bucaramanga</title>
+    </head>
+    <body>
+        <h1 style="color: blue;">Crea tu usuario y ¡Registrate!</h1>
+
+        <form action="CrearLogin.html" method="POST">
+            <p>
+                <label for="usuario"> Usuario:</label>
+                <input type="text" name="usuario"/>
+            </p>
+
+            <p>
+                <label for="contraseña"> Contraseña:</label>
+                <input type="password" name="contraseña"/>
+            </p>
+
+            <p>
+                <label for="contraseña2"> Confirmar contraseña:</label>
+                <input type="password" name="contraseña2"/>
+            </p>
+
+            <p>
+                <label for="rol_unab">Rol en la UNAB:</label>
+                <select name="rol_unab">
+                    <option>Seleccione rol</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="docente">Docente</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="empleado">Empleado</option>
+                    <option value="decano">Decano</option> 
+                    <option value="bienestar">Bienestar</option> 
+                </select>
+            </p>
+
+            <p>
+                <button type="submit">Registrarse</button>
+            </p>
+        </form> 
+    </body>
+</html>
