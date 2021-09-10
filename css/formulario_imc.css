@@ -1,0 +1,84 @@
+ 
+       /* body{
+          background-color: #c91c48b7;
+          font-size: 16px;
+          border: solid #c91c48 1px;
+        }*/
+         /*trabajar con selector tipo en el elemento html */
+        img{
+            float: left;
+            margin: 0 auto;
+        }
+
+        /*trabajar con selector clases en el elemento html */
+        .texto_general {
+          font-size:16px;
+          /*border: solid #ccc 2px;*/
+        }
+
+         /*trabajar con selector id en el elemento html */
+        #id_color{
+          font-size:22px;
+          border: solid #ccc 2px;
+        }
+       /* 
+        p{
+          font-size: 18 px;
+          border:dashed #ccc 1px;
+          border: 1px solid rgb(24, 205, 218);
+          border-radius: 1em;
+        } */
+      form {
+            /* Centrar el formulario en la página */
+            margin: 0 auto;
+            width: 400px;
+            /* Esquema del formulario */
+            padding: 1em;
+            border: 1px solid rgb(24, 205, 218);
+            border-radius: 1em;
+           }
+
+           input:invalid 
+           {
+              border: 1px dashed rgb(24, 205, 218);
+            }
+           
+           /* input:invalid:required 
+            {
+              background:1px dashed rgb(226, 11, 11);
+            }*/
+
+            input:valid 
+            {
+              border: 2px solid black;
+            }
+
+           input,textarea 
+           {
+            /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+              Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+            font: 1em sans-serif;
+
+            /* Tamaño uniforme del campo de texto */
+            width: 300px;
+            box-sizing: border-box;
+
+            /* Hacer coincidir los bordes del campo del formulario */
+            border: 1px solid #999;
+          }
+
+          input:focus,textarea:focus 
+          {
+            /* Destacado adicional para elementos que tienen el cursor */
+            border-color: rgb(19, 72, 216);
+          }
+          
+          /*textarea */
+          /*{
+            /* Alinear los campos de texto multilínea con sus etiquetas */
+            /*vertical-align: top;
+
+            /* Proporcionar espacio para escribir texto */
+            /*height: 5em;
+          }*/
+    
