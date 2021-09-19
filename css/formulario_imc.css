@@ -31,11 +31,11 @@
       form {
             /* Centrar el formulario en la página */
             margin: 5px;
-            width: 400px;
+            width: 1000px;
             /* Esquema del formulario */
             padding: 1em;
             border: 1px solid rgb(56, 218, 24);
-            border-radius: 1em;
+            border-radius: 5em;
            }
 
            input:invalid 
@@ -60,7 +60,7 @@
             font: 1em sans-serif;
 
             /* Tamaño uniforme del campo de texto */
-            width: 300px;
+            width: 200px;
             box-sizing: border-box;
 
             /* Hacer coincidir los bordes del campo del formulario */
