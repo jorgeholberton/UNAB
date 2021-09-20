@@ -1,0 +1,29 @@
+
+.encabezado{
+   width: 100%;
+   border: 2px solid #ccc;
+}
+
+.menu{
+   width: 30%;
+   float:left;
+   border: 1px solid #ccc;
+}
+
+.principal{
+   width: 69%;
+   float:left;
+   border: 1px solid #ccc;
+}
+
+.pie{
+   width: 100%; 
+   border: 1px solid #ccc
+}
+
+
+
+
+
+
+
