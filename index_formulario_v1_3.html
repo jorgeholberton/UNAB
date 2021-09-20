@@ -23,7 +23,7 @@
     <!--Enlaces Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>  
+    <link rel="shortcut icon" type="image/png" href="imagenes/favicon.png"/>  
 </head>
 
 
@@ -50,18 +50,14 @@
       </strong>
       </p>
       <br/>
+      
       <label for="sistema"><strong>Seleccione Sistema:</strong></label><!--Etiqueta de texto-->
-             <!-----Combox-->
-       <!-- <select id="sistemas" name="medidas">
-          <option value="sm" selected>Sistema Métrico</option>
-          <option value="si">Sistema Inglés</option>
-        </select>-->
-        <select class="form-select" aria-label="Default select example" id="combo" onchange="metricas();">
-            <option selected>Abra este Menú de Selección</option>
-            <option value="1">Sistema Métrico</option>
-            <option value="2">Sistema Inglés</option>
-          </select>
-         <!-----Fin Combox--> 
+      <!-----Inicio Combox-->  
+      <select id="combo" onchange="metricas()">
+        <option value="1">Sistema Métrico</option>
+        <option value="2">Sistema Inglés</option>
+      </select>
+     <!-----Fin Combox--> 
          <p></p>
          <!--  validar combo--> 
          <!--Pendiente con javascript-->
@@ -96,7 +92,7 @@
               <br/><!--salto de linea.-->
               <label for="est" id="lbl_est"><strong>Estatura en Metros:</strong><abbr title="Obligatorio" aria-label="required">*</abbr></label><!--Etiqueta de texto-->
               <br/><!--salto de linea.-->
-              <input type="number" size=400px class="form-control" required step="0.1"  id="est" name="estatura_usuario" title="Estatura de usuario. Obligatorio, entre 1 y 3 
+              <input type="number" size=400px class="form-control" required step="0.01"  id="est" name="estatura_usuario" title="Estatura de usuario. Obligatorio, entre 1 y 3 
               números separados por punto"> <!--campo de texto o de captura de una sola línea-->
            
               <br/><!--salto de linea.-->
@@ -105,7 +101,7 @@
                <label for="peso" id="lbl_peso"><strong>Peso en Kilos:</strong><abbr title="Obligatorio" aria-label="required">*</abbr></label><!--Etiqueta de texto-->
                <br/><!--salto de linea.-->
               
-               <input type="number" size=400px class="form-control" required step="0.1" id="peso" name="peso_usuario" title="Peso de usuario. Obligatorio, entre 1 y 3 
+               <input type="number" size=400px class="form-control" required step="0.01" id="peso" name="peso_usuario" title="Peso de usuario. Obligatorio, entre 1 y 3 
                números separados por punto"> <!--campo de texto o de captura de una sola línea-->
      
            
@@ -164,7 +160,7 @@
          
         
         
-        <button type="submit" size=200px class="btn btn-success" onclick="validarFormulario()"><strong>Enviar</strong></button>
+        <button type="submit" size=200px class="btn btn-success" onclick="{(e) => this.validarFormulario(e)}"><strong>Enviar</strong></button>
         <!--<input type="button" name="btn_calcular" id="btn_calcular" value="Calcular" class="btn btn-success" onclick="obtenerDatos()">-->
 
             <br/><!--salto de linea.-->
