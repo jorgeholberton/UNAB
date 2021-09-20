@@ -164,17 +164,6 @@
         <!--<input type="button" name="btn_calcular" id="btn_calcular" value="Calcular" class="btn btn-success" onclick="obtenerDatos()">-->
 
             <br/><!--salto de linea.-->
-           
-         
-          <!--El elemento <button> también acepta un atributo de type, que a su vez acepta uno de 
-              estos tres valores: submit, reset o button.
-            - botón submit (el valor predeterminado) envía los datos del formulario a la 
-              página web definida por el atributo action del elemento <form>.
-            - botón reset restablece de inmediato todos los controles de formulario a su 
-              valor predeterminado, por buena practica no usarlo.
-            - Un clic en un botón button no hace nada, para crear botones personalizados: 
-              puedes definir su función con JavaScript.
-            -->
        </form>
   <!--Llamado archivo javascript-->
  <script src="javascript/formulario_imc.js"></script>
@@ -182,24 +171,6 @@
 </body>
 
 </html>
-<!-- Enviar datos del formulario a un servidor-->
-<!-- El elemento <form> define dónde y cómo enviar los datos gracias a los atributos 
-    action y method.
 
-Proporcionamos un nombre (name) a cada control de formulario. 
-Los nombres son importantes tanto en el lado del cliente como del servidor; 
-le dicen al navegador qué nombre debe dar a cada dato y, en el lado del servidor, 
-dejan que el servidor maneje cada dato por su nombre. Los datos del formulario se envían 
-al servidor como pares de nombre/valor.
 
-En nuestro ejemplo, el formulario envía tres datos denominados «user_name», «user_email» y 
-«user_message». Esos datos se envían a la URL «/my-handling-form-page» utilizando el 
-método post de HTTP.
 
-En el lado del servidor, la secuencia de comandos de la URL «/my-handling-form-page» 
-recibe los datos como una lista de tres elementos clave/valor contenidos en la solicitud 
-HTTP. La forma en que este script maneja esos datos depende de dada lenguaje de 
-servidor (PHP, Python, Ruby, Java, C#, etc.) tiene su propio mecanismo de manipulación de 
-datos de formulario
-
--->
