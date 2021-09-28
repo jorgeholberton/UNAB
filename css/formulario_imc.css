@@ -1,6 +1,5 @@
  
        /* body{
-        
           background-color: #c91c48b7;
           font-size: 16px;
           border: solid #c91c48 1px;
@@ -31,12 +30,12 @@
         } */
       form {
             /* Centrar el formulario en la página */
-            margin: 5px;
-            width: 1200px;
+            margin: 0 auto;
+            width: 400px;
             /* Esquema del formulario */
             padding: 1em;
-            border: 2px solid rgb(56, 218, 24);
-            border-radius: 5em;
+            border: 1px solid rgb(24, 205, 218);
+            border-radius: 1em;
            }
 
            input:invalid 
@@ -61,7 +60,7 @@
             font: 1em sans-serif;
 
             /* Tamaño uniforme del campo de texto */
-            width: 400px;
+            width: 300px;
             box-sizing: border-box;
 
             /* Hacer coincidir los bordes del campo del formulario */
