@@ -34,7 +34,9 @@ var options = {
     subtitle: 'VALOR IMC'
   },
   width: 900,
-  height: 500
+  height: 500,
+
+  
 };
 
 var chart = new google.charts.Line(document.getElementById('linechart_material'));

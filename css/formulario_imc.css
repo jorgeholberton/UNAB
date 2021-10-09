@@ -13,6 +13,7 @@
         /*trabajar con selector clases en el elemento html */
         .texto_general {
           font-size:16px;
+          color: #fff;
           /*border: solid #ccc 2px;*/
         }
 
@@ -31,7 +32,7 @@
       form {
             /* Centrar el formulario en la página */
             margin: 0 auto;
-            width: 400px;
+            width: 600px;
             /* Esquema del formulario */
             padding: 1em;
             border: 1px solid rgb(24, 205, 218);
@@ -60,7 +61,7 @@
             font: 1em sans-serif;
 
             /* Tamaño uniforme del campo de texto */
-            width: 300px;
+            width: 550px;
             box-sizing: border-box;
 
             /* Hacer coincidir los bordes del campo del formulario */

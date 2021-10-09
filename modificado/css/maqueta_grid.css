@@ -1,0 +1,21 @@
+.capa_encabezado{grid-area:encabezado;}
+
+.capa_menu{grid-area:menu;}
+
+.capa_principal{grid-area:principal;}
+
+.capa_pie{grid-area:pie}
+
+.contenedor
+{
+    display:grid;
+    grid-template-areas:
+    'encabezado encabezado encabezado encabezado'
+    'menu principal principal principal'
+    'pie principal principal principal';
+    background-color: #2196F3;
+    grid-gap:10px;
+}
+
+.contenedor>div{background-color:rgba(255,255,255,0.8)}
+

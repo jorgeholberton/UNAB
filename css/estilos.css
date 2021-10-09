@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    color: #ffc107;
     box-sizing: border-box;
 }
 
@@ -8,7 +9,7 @@ body{
     
 
     font-family: 'Raleway', sans-serif;
-
+    
 
 }
 
@@ -20,7 +21,14 @@ header{
 }
 
 video{
-    width: 100%;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    
+
+    z-index: -1!important;
 }
 
 .absolute{

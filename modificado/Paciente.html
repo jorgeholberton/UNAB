@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO PACIENTE </title>
+    
+    <!--Hojas de estilo css-->
+    <!--Hojas de estilo css internas en html <style> </style>-->
+    <!--llamado archivo externo css-->
+    <LINK REL=StyleSheet HREF="css/formulario_imc.css" TYPE="text/css" MEDIA=screen>
+    <link rel="stylesheet" HREF="css/estilos.css">
+    <!--<link rel="stylesheet" href="https://carontestudio.com/css/main.min.css">-->
+     
+       <!--Fin Hojas de estilo css-->   
+    <!--Enlaces Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="imagenes/favicon.png"/>  
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" id='videofondo' href="https://carontestudio.com/css/main.min.css">
+    <script>
+
+        function siguiente()
+        {  
+            location.href="D:/unab/Ejercicios/index_formulario_v1_3c.html"
+        }
+    </script>
+</head>
+
+<!-- src="video/video.mp4"  src="https://carontestudio.com/img/f1.mp4" -->
+<body >
+  <link rel="stylesheet" z-index: -1; href="https://carontestudio.com/css/main.min.css">
+     
+      <h1 align="center" <strong> REGISTRO PACIENTE </strong></h1> 
+    
+    <!--form define formalmente un formulario -->
+    <!--El atributo action define la ubicación (URL) donde se envían los datos que el
+       formulario ha recopilado cuando se validan.-->
+    <!--El atributo method define con qué método HTTP se envían
+        los datos (generalmente get o post).
+      
+        <form action="//dirección de envío" method="post" no muestra los elementos de ruta, puede enviar imágenes>
+      -->
+      <div class="one">
+        <video id="videofondo" class="video-background" z-index="-1" poster="https://carontestudio.com/img/contacto.jpg" autoplay="autoplay" no-controls="" muted="muted" loop="">
+          <source  src="video/video.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2""">
+        </video>
+      </div>
+      <div class="one">
+        <video id="videofondo" z-index="-1" !important; class="video-background" poster="https://carontestudio.com/img/contacto.jpg" autoplay="autoplay" no-controls="" muted="muted" loop="">
+          <source src="https://carontestudio.com/img/f1.mp4" type="video/mp4" ;="" codecs="avc1.42E01E, mp4a.40.2">
+        </video></div>
+      <form  name='registro' id="registro" >   
+       
+
+      
+   <!-- <form action="/" method="post" name='registro' id="registro" </div>-->
+    
+      <p class="texto_general" align="all"><strong>
+        <img  src="imagenes/medicina3.png"   style="max-width:100%;height:auto;">
+        Ingrese los datos solicitados para registrarse en el programa IMC. NO se permiten campos en blanco
+      </strong>
+      </p>
+
+          <p><strong>Los campos obligatorios se marcan con un <abbr title = "required">*</abbr>  y en líneas punteadas en azul</strong> </p>
+          <br/>
+                
+          <label for="cod_pa"><strong>Código Paciente:</strong><abbr title="Obligatorio" aria-label="required">*</abbr></label><!--Etiqueta de texto-->
+              <br/><!--salto de linea. required pattern="[A-Za-z0-9]{3,40}" 
+                valida letras mayúsculas y minúsculas y números {3,40} valida longitud mínima y máxima-->
+              <input type="text" size=400px class="form-control" required pattern="{3,10}" id="cod_pa" name="cod_pa" title="Código paciente. Obligatorio, entre 3-10 carácteres
+             "> 
+             <br/>
+
+             <label for="cod_dep"><strong>Código Dependencia:</strong><abbr title="Obligatorio" aria-label="required">*</abbr></label><!--Etiqueta de texto-->
+              <br/><!--salto de linea. required pattern="[A-Za-z0-9]{3,40}" 
+                valida letras mayúsculas y minúsculas y números {3,40} valida longitud mínima y máxima-->
+              <input type="text" size=400px class="form-control" required pattern="{3,10}" id="cod_dep" name="cod_dep" title="Código dependencia. Obligatorio, entre 3-10 carácteres
+             "> 
+             <br/>
+          
+          <label id="id_ejemplo" for="name"><strong>Nombre(s):</strong> <abbr title="Obligatorio" aria-label="required">*</abbr></label><!--Etiqueta de texto-->
+             
+              <br/><!--salto de linea. required pattern="[A-Za-z0-9]{3,40}" 
+                valida letras mayúsculas y minúsculas y números {3,40} valida longitud mínima y máxima-->
+              <input type="text" size=400px class="form-control" required  pattern="[A-Za-z]{3,40}" id="nomb" name="nombre_usuario" title="Nombre de usuario. Obligatorio, entre 3-40 carácteres
+              Sólo se permiten letras mayúsculas y minúsculas"> <!--campo de texto o de captura de una sola línea-->
+              
+              <br/><!--salto de linea.-->
+                  
+              <label for="apellido"><strong>Apellidos:</strong><abbr title="Obligatorio" aria-label="required">*</abbr></label><!--Etiqueta de texto-->
+              <br/><!--salto de linea. required pattern="[A-Za-z0-9]{3,40}" 
+                valida letras mayúsculas y minúsculas y números {3,40} valida longitud mínima y máxima-->
+              <input type="text" size=400px class="form-control" required pattern="[A-Za-z]{3,40}" id="ape" name="apellido_usuario" title="Apellido de usuario. Obligatorio, entre 3-40 carácteres
+              Sólo se permiten letras mayúsculas y minúsculas"> <!--campo de texto o de captura de una sola línea-->
+       
+              <br/><!--salto de linea.-->
+              
+              <label for="dir_pa"><strong>Dirección Paciente:</strong><abbr title="Obligatorio" aria-label="required">*</abbr></label><!--Etiqueta de texto-->
+              <br/><!--salto de linea. required pattern="[A-Za-z0-9]{3,40}" 
+                valida letras mayúsculas y minúsculas y números {3,40} valida longitud mínima y máxima-->
+              <input type="text" size=400px class="form-control" required pattern="{3,40}" id="dir_pa" name="dir_pa" title="Dirección paciente. Obligatorio, entre 3-10 carácteres
+             "> 
+             <br/>
+
+             <label for="tel_pa"><strong>Teléfono Paciente:</strong><abbr title="Obligatorio" aria-label="required">*</abbr></label><!--Etiqueta de texto-->
+              <br/><!--salto de linea. required pattern="[A-Za-z0-9]{3,40}" 
+                valida letras mayúsculas y minúsculas y números {3,40} valida longitud mínima y máxima-->
+              <input type="text" size=400px class="form-control" required pattern="{3,40}" id="tel_pa" name="tel_pa" title="Teléfono Paciente. Obligatorio, entre 3-10 carácteres"> 
+             <br/>
+
+           <div class="input-group mb-3">
+                <label for="email" class="form-label"><strong>Correo Electrónico:</strong><abbr title="Obligatorio" aria-label="required">*</abbr></label>
+                <div class="input-group has-validation"> 
+                    <input type="text" size=400px required class="form-control" placeholder="Username" aria-label="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" size=400px class="form-control" id="email" aria-describedby="inputGroupPrepend2" required validarEmail()>
+                    
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+        
+       <!-- <button type="submit" align="center" size="400px" class="btn btn-success" onclick="{(e) => this.validarFormulario(e)}";drawChart()><strong>Enviar</strong></button>-->
+        <!--<input type="button" name="btn_calcular" id="btn_calcular" value="Calcular" class="btn btn-success" onclick="obtenerDatos()">-->
+        
+        <p>
+            <button type="button" onclick="siguiente()">Siguiente</button>
+       </p>    
+       
+    </form>
+
+  <!--Llamado archivo javascript-->
+ <script src="javascript/formulario_imc.js"></script>
+</html>
