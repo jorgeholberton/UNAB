@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    background: #40576d;
+    background-size: cover;
+    padding: 200px;
+}
+
+.login-form {
+    width: 28%;
+    margin: 0 auto;
+    background: url(C:\Users\JOHNNY\Documents\GitHub\UNAB\imagenes\poster.PNG)no-repeat 0px 0px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 33px 67px;
+    border-top: 6px solid #00c3ff;
+    box-shadow: 0px 35px 44px -22px rgba(0, 0, 0, 0.72);
+
+}
+
+h1 {
+text-align: center;
+font: size 26px;
+font-weight: bold;
+margin: top 24px;
+margin: bottom 26px;
+color: #fff;
+
+}
+
+form {
+margin:0 auto;
+
+}
+
+form p {
+font-size: 15px;
+margin-top: 44px;
+padding:0.3px;
+color: #fff;
+
+}
+
+.login-form form input[type="text"], input[type="password"]{
+    outline:none;
+    font: size 1em;
+    color: #fff;
+    padding: 15px 10px;
+    margin: 0 auto;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #dccdcf;
+    display:block;
+    background: transparent;
+}
+
+input[type="submit"]{
+width: 100%;
+outline: none;
+display: block;
+margin: 0 auto;
+margin-top: 45px;
+padding: 13px 20px;
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+background: #00c3ff;
+border: none;
+color: #fff;
+cursor: pointer;
+transition: 0.3s all;
+
+}
+
+input[type="submit"]:hover{
+background: #0080b3;
+transition:0.3s all;
+
+}
+
+.login-form a{
+display: block;
+font: size 15px;
+color: #fff;
+text-align: center;
+margin-top: 31px;
+transition: 0.3s all;
+
+}
+
+.login-form a:hover{
+color:#00c3ff;
+transition: 0.3s all;
+
+}

@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+          
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tu Salud: Universidad Autónoma de Bucaramanga</title>
+        <LINK REL="Stylesheet" href="C:\Users\JOHNNY\Documents\GitHub\UNAB\FrontProject_Cycle3-main\css\desing.css">
+                        
     </head>
-    <body>
-        <h1 style="color: blue;">Inicia sesión</h1>
+    <body>        
+        <div class="video">
+            <video id="videofondo" class="video-background" poster="C:\Users\JOHNNY\Documents\GitHub\UNAB\imagenes\poster.PNG" autoplay="autoplay" no-controls="" muted="muted" loop="">
+              <source src="C:\Users\JOHNNY\Documents\GitHub\UNAB\video\teclado.mp4" type="video/mp4 ;codecs="avc1.42E01E, mp4a.40.2""">
+            </video>
+          </div>
 
-        <form action="IniciarSesion.html" method="POST">
+        <div class="login-form">           
+        <h1 >Inicia sesión</h1>
+        <form action="IniciarSesion.html" method="post" >
+            <p class="texto_general" align="center"><strong>
+                <img  src="imagenes/medicina3.png"   style="max-width:100%;height:auto;">
+                
+              </strong>
+              </p>     
 
-            <p>
-                <label for="usuario"> Digite usuario:</label>
-                <input type="text" name="usuario"/>
-            </p>
-
-            <p>
-                <label for="contraseña"> Digite contraseña:</label>
-                <input type="password" name="contraseña"/>
-            </p>
-            <p>
-                <button type="submit">Iniciar sesión</button>
-            </p>
-            
+            <p>usuarios</p>
+            <input type="text"  name="usuario" required=""/>
+            <p>digite la contraseña</p>
+            <input type="password"  name="password" required=""/>
+            <input type="submit" value="Iniciar sesión">
+                                 
         </form> 
-    </body>
-</html>
+        <a href="#">Olvide la Contraseña</a>
+        </div>
+       
+    </body>    
+    </html>
