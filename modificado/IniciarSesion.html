@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script >
+
+        function vlrRadio()
+        {
+         
+          var op=document.entrada.seleccion.value;
+          var cod=document.entrada.usuario.value;
+         
+         
+          
+          if(op.length==0) op="Sin Seleccionar";
+          alert("Valor seleccionado: " + op);
+          
+          if(op=="est")
+          {
+              var cp="E"+cod;
+              alert(cp)
+              location.href="D:/unab/Ejercicios/Paciente.html"
+          }
+          else if(op=="pro")
+          {
+              var cp="P"+cod;
+              alert(cp);
+              location.href="D:/unab/Ejercicios/Paciente.html"
+          }
+          else
+          {
+            var cp="A"+cod;
+              alert(cp);
+              location.href="D:/unab/Ejercicios/Paciente.html"
+          }
+          console.log("Tipo Usuario: "+op+"  Código paciente: "+cp)
+        }
+        
+    </script>
+</head>
+<body>
+   
+        <h1 style="color: blue;">Inicia sesión</h1>
+
+        <form name="entrada" action="" method="POST" >
+        <!--<form name="entrada" action="" method="POST">-->
+
+            <p>
+                <label for="usuario"> Digite usuario:</label>
+                <input type="text" name="usuario" id="usuario"/>
+            </p>
+
+            <p>
+                <label for="contraseña"> Digite contraseña:</label>
+                <input type="password" name="contraseña"/>
+            </p>
+            
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="estudiante" name="seleccion"  value="est" checked >
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Estudiante
+                </label>
+              </div>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="seleccion" id="profesor" value="pro" >
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Profesor
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="seleccion" id="administrativo" value="adm"  >
+                <label class="form-check-label" >
+                  Administrativo
+                </label>
+              </div>
+
+
+              <p>
+                 <button type="button" onclick="vlrRadio()">Iniciar sesión</button>
+            </p>
+        </form> 
+</body>
+</html>
