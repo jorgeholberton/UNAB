@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     font-family: sans-serif;
     width: 100%;
@@ -93,8 +92,8 @@ transition: 0.3s all;
 .login-form a:hover{
 color:#00c3ff;
 transition: 0.3s all;
+}
 
-=======
 body {
     font-family: sans-serif;
     width: 100%;
@@ -190,5 +189,5 @@ transition: 0.3s all;
 color:#00c3ff;
 transition: 0.3s all;
 
->>>>>>> 37701f4529ca9c72ca3c604da10878fb597f25c5
+
 }
